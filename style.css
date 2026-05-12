@@ -84,6 +84,13 @@ body {
   font-size: 18px;
 }
 
+.hero-proof {
+  margin-top: 14px;
+  color: #93c5fd;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
 #dynamic-role {
   color: #bfdbfe;
   border-right: 2px solid #60a5fa;
@@ -267,6 +274,15 @@ body {
   color: #cbd5e1;
 }
 
+.timeline-item ul {
+  margin-left: 18px;
+  color: #cbd5e1;
+}
+
+.timeline-item li {
+  margin-bottom: 6px;
+}
+
 .project-card {
   min-height: 240px;
 }
@@ -280,12 +296,16 @@ body {
 .project-head a {
   color: #93c5fd;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 13px;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  padding: 4px 10px;
   height: fit-content;
 }
 
 .project-head a:hover {
   color: #dbeafe;
+  border-color: #60a5fa;
 }
 
 .project-points {
@@ -354,6 +374,16 @@ body {
 
 .cert-link:hover {
   border-bottom-color: #93c5fd;
+}
+
+.cert-meta {
+  margin: 12px 0 0 18px;
+  color: #cbd5e1;
+}
+
+.cert-meta li {
+  margin-bottom: 6px;
+  font-size: 14px;
 }
 
 .tags span {

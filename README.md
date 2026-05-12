@@ -4,13 +4,12 @@ Personal portfolio site for Jimmy Unelus, focused on QA automation, data enginee
 
 ## What was improved
 
-- Added dynamic hero role rotation.
-- Added animated KPI counters in the hero section.
-- Added project category filters (`All`, `QA`, `Data`, `FinTech`).
-- Added scroll-based section reveals animations.
-- Added active navigation highlighting based on the viewport section.
-- Added auto-updating footer year.
-- Added a floating back-to-top button.
+- Added recruiter-focused hero messaging and stronger contact CTAs.
+- Added SEO metadata (`description`, Open Graph, Twitter card) and Person schema markup.
+- Added a new `How I Work` section to highlight delivery approach.
+- Updated project cards with clearer repository actions and impact-oriented copy.
+- Updated experience entries with action/result bullet points.
+- Added dynamic hero role rotation, KPI counters, reveal animations, nav section highlighting, and back-to-top button.
 
 ## Tech stack
 
@@ -25,7 +24,7 @@ Open `index.html` in a browser, or run a simple local static server.
 PowerShell example:
 
 ```powershell
-Set-Location "C:\Users\big_j\PycharmProjects\JUnelus.github.io"
+Set-Location "C:\Users\big_j\IdeaProjects\JUnelus.github.io"
 python -m http.server 8000
 ```
 
