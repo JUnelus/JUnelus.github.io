@@ -39,6 +39,7 @@
       <a href="#about" class="nav-link">About</a>
       <a href="#skills" class="nav-link">Skills</a>
       <a href="#approach" class="nav-link">Approach</a>
+      <a href="#focus" class="nav-link">Current Focus</a>
       <a href="#projects" class="nav-link">Projects</a>
       <a href="#certifications" class="nav-link">Certifications</a>
       <a href="#experience" class="nav-link">Experience</a>
@@ -57,7 +58,7 @@
 
     <div class="buttons">
       <a href="#projects" class="btn primary">View Projects</a>
-      <a href="#contact" class="btn">Request Resume</a>
+      <a href="assets/Jimmy-Unelus-Resume.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download Resume</a>
       <a href="https://github.com/JUnelus" class="btn" target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href="https://www.linkedin.com/in/jimmy-unelus" class="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
@@ -67,15 +68,19 @@
     <div class="stats">
       <div class="stat-card">
         <p class="stat-number" data-target="10">0</p>
-        <p class="stat-label">Years Experience</p>
+        <p class="stat-label">Years in QA / FinTech</p>
       </div>
       <div class="stat-card">
-        <p class="stat-number" data-target="25">0</p>
-        <p class="stat-label">Automation Workstreams Delivered</p>
+        <p class="stat-number" data-target="90">0</p>
+        <p class="stat-label">Automation Coverage Increase</p>
       </div>
       <div class="stat-card">
-        <p class="stat-number" data-target="8">0</p>
-        <p class="stat-label">Core Platforms Supported</p>
+        <p class="stat-number" data-target="50">0</p>
+        <p class="stat-label">UAT Defect Reduction</p>
+      </div>
+      <div class="stat-card">
+        <p class="stat-number" data-target="40">0</p>
+        <p class="stat-label">Daily Data Feeds Supported</p>
       </div>
     </div>
   </section>
@@ -137,26 +142,38 @@
 
   <section id="approach" class="section reveal">
     <h2>How I Work</h2>
-    <p>A practical delivery approach built for fast-moving, high-risk product environments.</p>
+    <p>A delivery approach tuned for high-risk releases, CI/CD reliability, and data quality confidence.</p>
     <div class="grid">
       <div class="card">
-        <h3>Risk-First Coverage</h3>
-        <p>Prioritize business-critical paths first, then expand to regression depth using clear risk tiers.</p>
+        <h3>Risk-Based Test Strategy</h3>
+        <p>I prioritize high-risk workflows first, then layer smoke, regression, API, and data checks by release impact.</p>
       </div>
       <div class="card">
-        <h3>CI Quality Gates</h3>
-        <p>Shift checks left with smoke, API, and data validation gates that block risky releases early.</p>
+        <h3>Automation That Fits CI/CD</h3>
+        <p>I build reliable tests for Azure DevOps and GitHub Actions with clear pass/fail evidence for fast decisions.</p>
       </div>
       <div class="card">
-        <h3>Data Reliability</h3>
-        <p>Validate source-to-reporting accuracy with automated SQL checks, drift detection, and alerting.</p>
+        <h3>Data Quality + Functional QA</h3>
+        <p>I combine UI, API, SQL, and data validation to catch defects that UI-only automation typically misses.</p>
       </div>
     </div>
   </section>
 
+  <section id="focus" class="section reveal">
+    <h2>Current Focus</h2>
+    <div class="project-card focus-card">
+      <ul class="project-points">
+        <li>Building Playwright + PyTest frameworks for financial workflows</li>
+        <li>Expanding blockchain QA automation projects and regression suites</li>
+        <li>Creating daily automated data quality reports and SLA checks</li>
+        <li>Improving CI/CD quality gates and release visibility</li>
+      </ul>
+    </div>
+  </section>
+
   <section id="projects" class="section reveal">
-    <h2>Personal Projects</h2>
-    <p>Hands-on automation and data projects demonstrating practical delivery impact.</p>
+    <h2>Featured Project Case Studies</h2>
+    <p>Targeted QA automation and data engineering projects aligned with senior SDET and FinTech roles.</p>
     <div class="project-filters">
       <button class="filter-btn active" data-filter="all" type="button">All</button>
       <button class="filter-btn" data-filter="qa" type="button">QA</button>
@@ -166,74 +183,102 @@
     <div class="project-grid" id="project-grid">
 
       <div class="project-card" data-category="qa fintech">
+        <img src="assets/project-blockchain-qa-workflow.png" alt="Blockchain QA automation workflow preview" class="project-preview" />
         <div class="project-head">
-          <h3>E-Commerce Test Automation Suite</h3>
-          <a href="https://github.com/JUnelus" target="_blank" rel="noopener noreferrer" aria-label="Open repository">View repo</a>
+          <h3>Blockchain Smart Contract QA Automation Framework</h3>
+          <div class="project-links">
+            <a href="https://github.com/JUnelus/blockchain-smart-contract-qa-framework" target="_blank" rel="noopener noreferrer" aria-label="Open repository">View Repo</a>
+            <a href="https://github.com/JUnelus/blockchain-smart-contract-qa-framework#readme" target="_blank" rel="noopener noreferrer" aria-label="Open readme">README</a>
+          </div>
         </div>
-        <p>
-          End-to-end Selenium and Playwright suite that validates core retail buying flows.
-        </p>
+        <p>Ethereum contract validation framework with transaction lifecycle, negative-path, and event-log coverage.</p>
         <ul class="project-points">
-          <li>Automated 50+ critical scenarios (login, cart, checkout)</li>
-          <li>Integrated CI execution with result snapshots</li>
-          <li>Improved release confidence with repeatable regression evidence</li>
+          <li><strong>Problem:</strong> Smart contracts require deterministic validation for deposits, approvals, and refunds.</li>
+          <li><strong>What I Built:</strong> PyTest + Web3.py suite running against Hardhat-based local chains.</li>
+          <li><strong>Result:</strong> Repeatable regression evidence for contract behavior and failure handling.</li>
         </ul>
         <div class="tags">
-          <span>Python</span><span>Selenium</span><span>Playwright</span>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="qa">
-        <div class="project-head">
-          <h3>REST API Testing Framework</h3>
-          <a href="https://github.com/JUnelus" target="_blank" rel="noopener noreferrer" aria-label="Open repository">View repo</a>
-        </div>
-        <p>
-          Reusable API test framework using Postman collections and Python assertions.
-        </p>
-        <ul class="project-points">
-          <li>Validated positive and negative REST API paths</li>
-          <li>Implemented JSON schema and contract checks</li>
-          <li>Published daily run reports for QA and product teams</li>
-        </ul>
-        <div class="tags">
-          <span>Postman</span><span>Python</span><span>Testing</span>
+          <span>Blockchain</span><span>PyTest</span><span>Web3.py</span><span>CI/CD</span><span>FinTech</span>
         </div>
       </div>
 
       <div class="project-card" data-category="qa data">
+        <img src="assets/project-etl-testing-architecture.png" alt="ETL testing architecture preview" class="project-preview" />
         <div class="project-head">
-          <h3>SQL Data Validation Utility</h3>
-          <a href="https://github.com/JUnelus" target="_blank" rel="noopener noreferrer" aria-label="Open repository">View repo</a>
+          <h3>ETL Automation Testing with PySpark</h3>
+          <div class="project-links">
+            <a href="https://github.com/JUnelus/PySpark-ETL-and-Analysis-on-Trending-Crypto-Prices" target="_blank" rel="noopener noreferrer" aria-label="Open repository">View Repo</a>
+            <a href="https://github.com/JUnelus/PySpark-ETL-and-Analysis-on-Trending-Crypto-Prices#readme" target="_blank" rel="noopener noreferrer" aria-label="Open readme">README</a>
+          </div>
         </div>
-        <p>
-          Python utility for validating warehouse records and reconciling transformed datasets.
-        </p>
+        <p>Data pipeline test harness validating transformation logic, schema contracts, and data quality thresholds.</p>
         <ul class="project-points">
-          <li>Automated SQL checks for data quality and completeness</li>
-          <li>Flagged mismatches between source and reporting layers</li>
-          <li>Generated exportable run summaries for stakeholders</li>
+          <li><strong>Problem:</strong> ETL changes can silently break reporting and downstream quality.</li>
+          <li><strong>What I Built:</strong> PySpark + SQL checks for nulls, drift, duplicates, and rule violations.</li>
+          <li><strong>Result:</strong> Faster root-cause analysis and stronger data reliability before release.</li>
         </ul>
         <div class="tags">
-          <span>Python</span><span>SQL</span><span>Pandas</span>
+          <span>PySpark</span><span>Python</span><span>SQL</span><span>Data Validation</span><span>CI/CD</span>
         </div>
       </div>
 
       <div class="project-card" data-category="data fintech">
+        <img src="assets/project-fix-trade-monitoring.png" alt="FIX trade ingestion monitoring preview" class="project-preview" />
         <div class="project-head">
-          <h3>Market Risk Tracker</h3>
-          <a href="https://github.com/JUnelus" target="_blank" rel="noopener noreferrer" aria-label="Open repository">View repo</a>
+          <h3>Real-Time FIX Trade Ingestion &amp; Monitoring System</h3>
+          <div class="project-links">
+            <a href="https://github.com/JUnelus/Real-Time-FIX-Trade-Ingestion-and-Monitoring-System" target="_blank" rel="noopener noreferrer" aria-label="Open repository">View Repo</a>
+            <a href="https://github.com/JUnelus/Real-Time-FIX-Trade-Ingestion-and-Monitoring-System#readme" target="_blank" rel="noopener noreferrer" aria-label="Open readme">README</a>
+          </div>
         </div>
-        <p>
-          Portfolio risk monitoring workflow with rule-based alerts and daily snapshots.
-        </p>
+        <p>Trade event ingestion and quality monitoring workflow for latency-sensitive financial message streams.</p>
         <ul class="project-points">
-          <li>Built position and exposure checks for high-risk assets</li>
-          <li>Added threshold alerts and trend visibility</li>
-          <li>Delivered a finance-friendly summary view</li>
+          <li><strong>Problem:</strong> Trade message delays and malformed payloads increase operational risk.</li>
+          <li><strong>What I Built:</strong> Python-based ingestion validators with stream health monitoring.</li>
+          <li><strong>Result:</strong> Better real-time visibility for issue triage and release readiness checks.</li>
         </ul>
         <div class="tags">
-          <span>Python</span><span>SQL</span><span>FinTech</span>
+          <span>Python</span><span>FinTech</span><span>Monitoring</span><span>Data Validation</span><span>API Testing</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="data">
+        <img src="assets/project-nyc-311-report.png" alt="NYC 311 data quality pipeline preview" class="project-preview" />
+        <div class="project-head">
+          <h3>NYC 311 Daily Data Quality Pipeline</h3>
+          <div class="project-links">
+            <a href="https://github.com/JUnelus/nyc-311-daily-data-quality-and-reporting-pipeline" target="_blank" rel="noopener noreferrer" aria-label="Open repository">View Repo</a>
+            <a href="https://github.com/JUnelus/nyc-311-daily-data-quality-and-reporting-pipeline#readme" target="_blank" rel="noopener noreferrer" aria-label="Open readme">README</a>
+          </div>
+        </div>
+        <p>Automated public-data ingestion with validation checks and a daily summary report for anomalies.</p>
+        <ul class="project-points">
+          <li>Ingested daily API data and normalized records for quality checks</li>
+          <li>Automated null, schema, and freshness checks with report output</li>
+          <li>Published consistent data health snapshots for stakeholders</li>
+        </ul>
+        <div class="tags">
+          <span>Python</span><span>API Testing</span><span>SQL</span><span>Data Validation</span><span>Reporting</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="qa">
+        <img src="assets/project-retail-test-report.png" alt="Retail test automation report preview" class="project-preview" />
+        <div class="project-head">
+          <h3>Retail Website Performance Test Framework</h3>
+          <div class="project-links">
+            <a href="https://github.com/JUnelus/Website-Testing-Framework-with-Pytest" target="_blank" rel="noopener noreferrer" aria-label="Open repository">View Repo</a>
+            <a href="https://github.com/JUnelus/Website-Testing-Framework-with-Pytest#readme" target="_blank" rel="noopener noreferrer" aria-label="Open readme">README</a>
+          </div>
+        </div>
+        <p>UI regression and performance checks for key user journeys with CI-ready HTML test reporting.</p>
+        <ul class="project-points">
+          <li>Covered critical user paths with reliable Playwright + PyTest automation</li>
+          <li>Added threshold-based performance assertions and trend reporting</li>
+          <li>Integrated pipeline-ready artifacts for release sign-off evidence</li>
+        </ul>
+        <div class="tags">
+          <span>Playwright</span><span>PyTest</span><span>CI/CD</span><span>Performance</span><span>QA Automation</span>
         </div>
       </div>
 
@@ -254,6 +299,9 @@
         <h3>Professional Data Engineer Certification</h3>
         <p class="cert-org">Google Cloud</p>
         <ul class="cert-meta">
+          <li><strong>Evidence:</strong> Custom Evidence</li>
+          <li><strong>Series ID:</strong> 45579</li>
+          <li><strong>Certified As:</strong> Jimmy Unelus</li>
           <li><strong>Credential ID:</strong> 01b9b0b84db34c7ca18b6fd07df29a14</li>
         </ul>
       </div>
@@ -305,7 +353,7 @@
     <p>Let’s connect about QA automation, data engineering, and FinTech platform quality. I usually reply within 24 hours.</p>
     <div class="buttons">
       <a href="mailto:jimmyunelus@gmail.com" class="btn primary">Email Me</a>
-      <a href="mailto:jimmyunelus@gmail.com?subject=Resume%20Request" class="btn">Request Resume PDF</a>
+      <a href="assets/Jimmy-Unelus-Resume.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download Resume</a>
       <a href="https://github.com/JUnelus" class="btn" target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href="https://www.linkedin.com/in/jimmy-unelus" class="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>

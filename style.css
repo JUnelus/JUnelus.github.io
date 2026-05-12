@@ -125,9 +125,9 @@ body {
 .stats {
   margin: 42px auto 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 14px;
-  max-width: 880px;
+  max-width: 1100px;
 }
 
 .stat-card {
@@ -287,16 +287,31 @@ body {
   min-height: 240px;
 }
 
+.project-preview {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  margin-bottom: 14px;
+  display: block;
+}
+
 .project-head {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 10px;
+}
+
+.project-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .project-head a {
   color: #93c5fd;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
   border: 1px solid #334155;
   border-radius: 999px;
   padding: 4px 10px;
@@ -316,6 +331,11 @@ body {
 .project-points li {
   margin-bottom: 4px;
   font-size: 14px;
+}
+
+.focus-card {
+  max-width: 900px;
+  margin: 30px auto 0;
 }
 
 .project-card.hidden {

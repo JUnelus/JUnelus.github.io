@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   statNumbers.forEach((el) => statObserver.observe(el));
 
   const filterButtons = document.querySelectorAll(".filter-btn");
-  const projectCards = document.querySelectorAll(".project-card");
+  const projectCards = document.querySelectorAll("#project-grid .project-card");
 
   filterButtons.forEach((button) => {
 	button.addEventListener("click", () => {
